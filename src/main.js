@@ -43,6 +43,16 @@ const pages={};
 pages["/"]=()=>`
 <section class="hero hh2"><div class="w hgrid"><div><h1>LEARN. GROW. <span class="ac">ACE.</span></h1><p class="lead">Build the skills, confidence and mindset to ace yourself.</p><a class="btn" href="#/programs">EXPLORE PROGRAMS →</a> <a class="btn o" href="#/callback">GET A CALLBACK</a></div>${ILH}</div></section>
 <section class="say c"><p class="eb" style="color:inherit;opacity:.7">Say it out loud:</p><div class="big"><em>Ace</em>${STAR}Myself.</div><p style="opacity:.8;font-size:1.2rem;margin:0">Sounds like a pretty good goal, doesn't it?</p></section>
+
+<a class="fh-strip" href="#/free" aria-label="Explore free things from AceMyself">
+  <div class="w">
+    <p class="fh-strip-kicker">Something free? 🎀</p>
+    <h2>Worth a little detour.</h2>
+    <p>Free little things to help you learn, grow &amp; ace yourself.</p>
+    <span aria-hidden="true">→</span>
+  </div>
+</a>
+
 ${CBSEC()}
 <section class="s"><div class="w split"><h2>What’s Included?</h2>${rows([["Communication & Public Speaking","Build practical communication and speaking skills."],["Personalized Learning","Learning that adapts to the individual."],["Confidence Building","Become more comfortable expressing yourself and being heard."],["Interactive Practice","Learn by participating, practising and doing."],["Real-World Skills","Develop skills that extend beyond traditional classroom learning."]])}</div></section>
 <section class="s bgm"><div class="w safe"><div><h2>You’re in safe hands</h2>${ILS}</div><div><div class="sx"><h3>Experienced Instructors</h3><p>Learn with quality instructors who understand practical learning.</p></div><div class="sx"><h3>Small &amp; Engaging Cohorts</h3><p>Smaller groups mean more interaction and opportunities to practise.</p></div><div class="sx"><h3>A Safe Learning Space</h3><p>A supportive environment where learners can participate, make mistakes and grow.</p></div></div></div></section>

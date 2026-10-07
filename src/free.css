@@ -1,3 +1,189 @@
+/* ================= Free Hub ================= */
+
+.fh-hero {
+padding: 88px 0 64px;
+text-align: center;
+}
+
+.fh-hero .w {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.fh-hero .eb {
+margin-bottom: 14px;
+}
+
+.fh-title {
+margin: 0;
+font-family: "Fraunces", Georgia, serif;
+font-size: clamp(3.2rem, 9vw, 6rem);
+line-height: .95;
+font-weight: 500;
+letter-spacing: -.05em;
+}
+
+.fh-sub {
+max-width: 560px;
+margin: 22px auto 0;
+font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+line-height: 1.55;
+opacity: .68;
+}
+
+/* ================= Featured Free Feature ================= */
+
+.fh-fs {
+padding: 12px 0 92px;
+}
+
+.fh-fs .w {
+max-width: 900px;
+margin: 0 auto;
+}
+
+.fh-feat {
+position: relative;
+display: flex;
+gap: 34px;
+align-items: flex-start;
+padding: 48px 52px;
+background: #f6edc9;
+border: 1px solid rgba(0,0,0,.08);
+border-radius: 22px;
+overflow: hidden;
+}
+
+.fh-feat::after {
+content: "";
+position: absolute;
+width: 90px;
+height: 90px;
+right: -42px;
+top: -42px;
+border-radius: 50%;
+border: 1px solid rgba(0,0,0,.08);
+}
+
+.fh-em {
+flex: 0 0 auto;
+font-size: 2.4rem;
+line-height: 1;
+margin-top: 3px;
+}
+
+.fh-body {
+max-width: 620px;
+}
+
+.fh-body h2 {
+margin: 0 0 12px;
+font-family: "Fraunces", Georgia, serif;
+font-size: clamp(2rem, 5vw, 3.1rem);
+line-height: 1.05;
+font-weight: 500;
+letter-spacing: -.035em;
+}
+
+.fh-lede {
+margin: 0;
+font-family: "Fraunces", Georgia, serif;
+font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+line-height: 1.4;
+}
+
+.fh-desc {
+margin: 10px 0 26px;
+font-size: .98rem;
+line-height: 1.55;
+opacity: .65;
+}
+
+.fh-cta {
+display: inline-block;
+}
+
+/* ================= Coming Soon ================= */
+
+.fh-more {
+padding: 0 0 110px;
+text-align: center;
+}
+
+.fh-more .w {
+max-width: 620px;
+margin: 0 auto;
+}
+
+.fh-more h2 {
+margin: 0 0 12px;
+font-family: "Fraunces", Georgia, serif;
+font-size: clamp(1.8rem, 4vw, 2.5rem);
+font-weight: 500;
+}
+
+.fh-more p {
+margin: 0;
+line-height: 1.6;
+opacity: .62;
+}
+
+/* ================= Free Hub Mobile ================= */
+
+@media (max-width: 640px) {
+
+.fh-hero {
+padding: 62px 0 44px;
+}
+
+.fh-title {
+font-size: clamp(3rem, 15vw, 4.5rem);
+}
+
+.fh-sub {
+margin-top: 18px;
+font-size: 1.05rem;
+}
+
+.fh-fs {
+padding: 8px 0 68px;
+}
+
+.fh-feat {
+display: block;
+padding: 32px 24px 34px;
+border-radius: 18px;
+}
+
+.fh-em {
+display: block;
+margin-bottom: 18px;
+font-size: 2rem;
+}
+
+.fh-body h2 {
+font-size: 2.35rem;
+}
+
+.fh-lede {
+font-size: 1.18rem;
+}
+
+.fh-desc {
+margin-bottom: 24px;
+}
+
+.fh-cta {
+width: 100%;
+box-sizing: border-box;
+text-align: center;
+}
+
+.fh-more {
+padding: 0 0 76px;
+}
+
+}
 /* ================= Dear Future Me ================= */
 
 .dfm-hero {

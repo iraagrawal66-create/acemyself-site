@@ -1,0 +1,236 @@
+/* ================= Dear Future Me ================= */
+
+.dfm-hero {
+  padding: 76px 0 54px;
+  text-align: center;
+}
+
+.dfm-w {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.dfm-title {
+  margin: 10px 0 18px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(3rem, 8vw, 5.6rem);
+  line-height: .95;
+  font-weight: 500;
+  letter-spacing: -.045em;
+}
+
+.dfm-sub {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  line-height: 1.45;
+}
+
+.dfm-sub2 {
+  margin: 10px auto 0;
+  opacity: .65;
+  font-size: .98rem;
+}
+
+.dfm-sec {
+  padding: 18px 0 90px;
+}
+
+#dfm {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.dfm-prompt {
+  margin: 0 0 8px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.45rem, 4vw, 2rem);
+  line-height: 1.3;
+}
+
+.dfm-swap {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0 0 28px;
+  font: inherit;
+  font-size: .88rem;
+  cursor: pointer;
+  opacity: .58;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dfm-swap:hover {
+  opacity: 1;
+}
+
+.dfm-vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#dfm-msg,
+#dfm-mail {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.16);
+  background: #fffdf8;
+  color: inherit;
+  border-radius: 14px;
+  font: inherit;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+#dfm-msg {
+  min-height: 220px;
+  padding: 18px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+#dfm-mail {
+  padding: 15px 16px;
+  margin-top: 4px;
+}
+
+#dfm-msg:focus,
+#dfm-mail:focus {
+  border-color: rgba(0,0,0,.45);
+  box-shadow: 0 0 0 4px rgba(242,211,113,.22);
+}
+
+#dfm-msg::placeholder,
+#dfm-mail::placeholder {
+  opacity: .45;
+}
+
+.dfm-date {
+  margin: 14px 0 52px;
+  font-size: .92rem;
+  opacity: .7;
+  line-height: 1.5;
+}
+
+.dfm-date span {
+  display: block;
+  margin-top: 3px;
+  opacity: .7;
+}
+
+.dfm-h2 {
+  margin: 0 0 14px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.7rem, 4vw, 2.25rem);
+  font-weight: 500;
+}
+
+.hint {
+  margin: 9px 0 22px;
+  font-size: .82rem;
+  opacity: .58;
+  line-height: 1.45;
+}
+
+.er {
+  min-height: 20px;
+  margin: 7px 0 0;
+  font-size: .82rem;
+}
+
+.dfm-go {
+  margin-top: 2px;
+}
+
+.dfm-done {
+  max-width: 680px;
+  margin: 20px auto 90px;
+  text-align: center;
+}
+
+.dfm-ok {
+  margin: 0 0 18px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.3rem, 6vw, 3.8rem);
+  font-weight: 500;
+}
+
+.dfm-big {
+  max-width: 570px;
+  margin: 0 auto;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  line-height: 1.35;
+}
+
+.dfm-when {
+  margin: 16px 0 42px;
+  opacity: .7;
+}
+
+.dfm-next {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  border-radius: 18px;
+  background: #f6edc9;
+}
+
+.dfm-next h3 {
+  margin: 0 0 10px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.dfm-next p {
+  margin: 8px auto;
+  line-height: 1.55;
+}
+
+.dfm-q {
+  margin-top: 22px !important;
+  font-weight: 600;
+}
+
+.dfm-cta2 {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.msg.no {
+  margin-top: 16px;
+  font-size: .9rem;
+}
+
+@media (max-width: 640px) {
+  .dfm-hero {
+    padding: 58px 0 38px;
+  }
+
+  .dfm-sec {
+    padding-bottom: 65px;
+  }
+
+  .dfm-date {
+    margin-bottom: 42px;
+  }
+
+  .dfm-next {
+    padding: 26px 18px;
+  }
+
+  .dfm-cta2 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  }

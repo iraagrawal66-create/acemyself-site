@@ -1,3 +1,4 @@
+import { freePages, bindDfm } from "./free.js";
 import { createClient } from "@supabase/supabase-js";
 
 /* ============ CONFIG — edit everything here ============ */
@@ -114,6 +115,7 @@ pages["/terms"]=()=>legal("Terms & Conditions",[
 ["Changes to these Terms","We may update these Terms; the latest version will be posted here."],
 ["Contact",ph(K.email.value)]]);
 /* ============ chrome ============ */
+Object.assign(pages, freePages(page));
 const NAV=[["Programs","#/programs"],["About","#/about"],["FAQ","#/faq"],["Contact Us","#/contact"]];
 $(".lg").innerHTML=LOGO;$("#flg").innerHTML=LOGO;
 $("#nl").innerHTML=NAV.map(([t,h])=>`<li><a href="${h}">${t}</a></li>`).join("")+`<li><a class="btn" href="#/callback">GET A CALLBACK</a></li>`;
@@ -163,6 +165,10 @@ let pend=false;
 function route(){setMenu(false);let p=(location.hash.slice(1)||"/").replace(/\/$/,"")||"/";const cb=false;
  if(p.startsWith("/enroll"))p="/enroll";
  const fn=pages[p]||pages["/"];$("#app").innerHTML=fn();
+                 if(p==="/free/dear-future-me") bindDfm({
+  getClient:()=>supabase,
+  programHref:"#/programs"
+});
  document.title=(TITLES[p]||PR.name)+(p==="/"?"":" | AceMyself");
  $$("nav a[href]:not(.btn)").forEach(a=>a.getAttribute("href")==="#"+p?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"));
  if($("#cb"))bindCb();if($("#en"))bindEnroll();if($(".acc"))bindFaq();

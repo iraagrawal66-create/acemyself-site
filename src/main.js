@@ -1,4 +1,5 @@
 import { freePages, bindDfm } from "./free.js";
+import "./free.css";
 import { createClient } from "@supabase/supabase-js";
 
 /* ============ CONFIG — edit everything here ============ */

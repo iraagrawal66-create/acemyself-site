@@ -1,0 +1,78 @@
+/* "Something free?" homepage strip — cream, open, typography-led. Classes are prefixed sf- to avoid collisions. */
+.sf{display:block;color:var(--fg);text-decoration:none;padding:44px 0}
+.sf-in{display:grid;grid-template-columns:1fr auto;column-gap:24px;row-gap:4px;align-items:center}
+.sf-h{grid-column:1;font-size:clamp(1.5rem,5.4vw,2.8rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:.14em;text-underline-offset:.14em;transition:text-decoration-color .25s}
+.sf-s{grid-column:1;font-weight:600;font-size:1.1rem}
+.sf-t{grid-column:1;color:var(--mut)}
+.sf-a{grid-column:2;grid-row:1/4;font-size:2rem;line-height:1;transition:transform .25s}
+.sf:hover .sf-h,.sf:focus-visible .sf-h{text-decoration-color:var(--acc)}
+.sf:hover .sf-a,.sf:focus-visible .sf-a{transform:translateX(6px)}
+.sf:focus-visible{outline:3px solid var(--acc);outline-offset:-3px}
+@media(min-width:700px){.sf{padding:56px 0}}
+
+/* ===== Free hub (#/free) — classes prefixed fh- ===== */
+.fh-hero{padding:72px 0 36px}
+body .fh-title{font-size:clamp(2.7rem,9.5vw,5.8rem);line-height:1.02;max-width:11ch;margin:0 0 .35em;text-wrap:balance}
+.fh-sub{font-size:clamp(1.1rem,2.6vw,1.4rem);color:var(--mut);max-width:30ch;margin:0}
+.fh-fs{padding:20px 0 64px}
+.fh-feat{position:relative;display:grid;gap:10px;padding:32px 22px 36px;background:color-mix(in srgb,var(--acc) 20%,var(--bg));border:1px solid var(--line);border-radius:24px 24px 24px 6px;transition:border-color .25s}
+.fh-feat:hover{border-color:var(--fg)}
+.fh-em{font-size:2.2rem;line-height:1;display:block;transform:rotate(-8deg);width:fit-content}
+body .fh-feat h2{font-size:clamp(2.3rem,8.4vw,5rem);line-height:1.02;margin:.1em 0 .25em;text-wrap:balance}
+.fh-lede{font-size:clamp(1.15rem,2.8vw,1.45rem);font-weight:500;margin:0 0 .4em;max-width:26ch}
+.fh-desc{color:var(--mut);margin:0 0 1.6em;max-width:36ch}
+.fh-cta{width:fit-content}
+.fh-cta,.fh-cta:hover{transform:none}
+.fh-cta::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.fh-feat .fh-cta::after{border-radius:24px 24px 24px 6px}
+.fh-feat:has(.fh-cta:focus-visible){outline:3px solid var(--acc);outline-offset:3px}
+.fh-cta:focus-visible{outline:none}
+.fh-more{padding:36px 0 88px}
+.fh-more .w::before{content:"";display:block;border-top:1px solid var(--line);margin-bottom:32px}
+body .fh-more h2{font-size:clamp(1.5rem,4.4vw,2.2rem);line-height:1.15;margin:0 0 .4em}
+.fh-more p{color:var(--mut);max-width:44ch;margin:0}
+@media(min-width:900px){
+ .fh-hero{padding:128px 0 56px}
+ .fh-fs{padding:24px 0 96px}
+ .fh-feat{grid-template-columns:1fr auto;column-gap:48px;padding:72px 64px 76px}
+ .fh-body{grid-column:1;grid-row:1}
+ .fh-em{grid-column:2;grid-row:1;font-size:4.5rem;align-self:start;transform:rotate(8deg)}
+ body .fh-feat h2{margin-left:-.02em}
+ .fh-body{padding-left:6%}
+ .fh-more{padding:48px 0 120px}
+ body .fh-more h2,.fh-more p{margin-left:6%}
+}
+
+/* ===== Dear Future Me (#/free/dear-future-me) — classes prefixed dfm- ===== */
+.dfm-w{max-width:800px}
+.dfm-hero{padding:64px 0 28px}
+body .dfm-title{font-size:clamp(2.8rem,11vw,6rem);line-height:1.02;margin:0 0 .3em;text-wrap:balance}
+.dfm-sub{font-size:clamp(1.2rem,3vw,1.6rem);font-weight:500;line-height:1.35;margin:0 0 .5em;max-width:24ch}
+.dfm-sub2{color:var(--mut);margin:0}
+.dfm-sec{padding:20px 0 96px}
+.dfm-vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dfm-prompt{font-family:var(--font-display);font-weight:500;font-size:clamp(1.35rem,4.6vw,2rem);line-height:1.25;letter-spacing:-.01em;margin:0 0 4px;padding-left:14px;border-left:4px solid var(--acc);min-height:2.6em;display:flex;align-items:center}
+.dfm-swap{background:none;border:0;color:var(--mut);font:inherit;font-weight:600;font-size:.95rem;padding:10px 0;min-height:44px;cursor:pointer;margin-bottom:6px}
+.dfm-swap:hover{color:var(--fg);text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:.18em;text-underline-offset:.15em}
+.dfm-swap:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:6px}
+#dfm textarea{display:block;width:100%;min-height:240px;padding:18px;border-radius:14px;border:1.5px solid var(--line);background:#fff;color:var(--fg);font:inherit;font-size:17px;line-height:1.7;resize:vertical}
+#dfm textarea:focus{border-color:var(--fg);outline:none}#dfm textarea:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+#dfm textarea[aria-invalid=true]{border-color:#d33}
+.dfm-date{margin:20px 0 0;padding:16px 18px;background:color-mix(in srgb,var(--acc) 20%,var(--bg));border-radius:14px 14px 14px 4px}
+.dfm-date b{font-family:var(--font-display);font-weight:600;font-size:1.2em}
+.dfm-date span{display:block;color:var(--mut);font-size:.9rem;margin-top:2px}
+body .dfm-h2{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.12;margin:44px 0 14px}
+.dfm-go{width:100%;min-height:58px;margin-top:22px;font-size:1rem}
+.dfm-go:disabled{opacity:.7;cursor:progress}
+.dfm-done{outline:none}
+body .dfm-ok{font-size:clamp(2.6rem,10vw,4.6rem);line-height:1.02;margin:0 0 .3em}
+.dfm-big{font-family:var(--font-display);font-weight:500;font-size:clamp(1.4rem,4.4vw,2rem);line-height:1.25;margin:0 0 .8em;max-width:22ch}
+.dfm-when{margin:0;padding:14px 18px;background:color-mix(in srgb,var(--acc) 20%,var(--bg));border-radius:14px 14px 14px 4px;width:fit-content;max-width:100%}
+.dfm-when b{font-family:var(--font-display);font-weight:600;font-size:1.15em}
+.dfm-next{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
+body .dfm-next h3{font-family:var(--font-display);font-weight:600;font-size:clamp(1.5rem,4.6vw,2.1rem);line-height:1.2;letter-spacing:-.01em;margin:0 0 .5em;max-width:24ch}
+.dfm-next p{color:var(--mut);max-width:42ch;margin:0 0 1.2em}
+.dfm-next .dfm-q{color:var(--fg);font-weight:600;margin-bottom:.8em}
+.dfm-cta2{white-space:normal;text-align:center;line-height:1.3;padding:16px 24px;width:100%;border-radius:28px}
+@media(min-width:700px){.dfm-go{width:auto;min-width:340px}.dfm-cta2{width:auto}}
+@media(min-width:900px){.dfm-hero{padding:112px 0 40px}.dfm-sec{padding:24px 0 128px}}
